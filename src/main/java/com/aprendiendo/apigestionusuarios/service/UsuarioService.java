@@ -1,6 +1,6 @@
 package com.aprendiendo.apigestionusuarios.service;
 
-import com.aprendiendo.apigestionusuarios.UsuarioExistenteException;
+import com.aprendiendo.apigestionusuarios.exception.UsuarioExistenteException;
 import com.aprendiendo.apigestionusuarios.model.Usuario;
 import com.aprendiendo.apigestionusuarios.model.dto.UsuarioDto;
 import com.aprendiendo.apigestionusuarios.model.response.UsuarioResponse;
@@ -8,7 +8,6 @@ import com.aprendiendo.apigestionusuarios.repository.UsuarioRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
