@@ -4,6 +4,7 @@ import com.aprendiendo.apigestionusuarios.model.Usuario;
 import com.aprendiendo.apigestionusuarios.model.dto.UsuarioDto;
 import com.aprendiendo.apigestionusuarios.model.response.UsuarioResponse;
 import com.aprendiendo.apigestionusuarios.service.UsuarioService;
+import com.aprendiendo.apigestionusuarios.util.Constantes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping(Constantes.API)
 public class UsuarioController {
 
     @Autowired

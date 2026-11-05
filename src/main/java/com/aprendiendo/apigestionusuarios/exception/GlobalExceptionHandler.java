@@ -1,4 +1,4 @@
-package com.aprendiendo.apigestionusuarios;
+package com.aprendiendo.apigestionusuarios.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
