@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(Constantes.API)
+@RequestMapping(Constantes.V1 + Constantes.API)
 public class UsuarioController {
 
     @Autowired
