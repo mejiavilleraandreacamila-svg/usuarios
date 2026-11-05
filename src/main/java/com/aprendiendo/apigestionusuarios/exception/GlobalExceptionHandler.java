@@ -14,11 +14,8 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(UsuarioExistenteException.class)
     public ResponseEntity<Map<String, String>> manejarUsuarioExistente(
             UsuarioExistenteException ex) {
-
         Map<String, String> response = new HashMap<>();
-
         response.put("mensaje", ex.getMessage());
-
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(response);
